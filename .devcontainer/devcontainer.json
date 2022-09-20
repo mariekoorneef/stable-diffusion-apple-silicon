@@ -1,0 +1,31 @@
+{
+  "name": "Hugging face transformers cpu - local",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  // "image": "huggingface/transformers-cpu:4.18.0",
+  "mounts": [],
+  // "runArgs": ["--platform=linux/amd64"],
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "python.linting.enabled": false,
+    "python.linting.pylintEnabled": true,
+    "python.formatting.blackPath": "/usr/local/bin/black",
+    "python.linting.flake8Path": "/usr/local/bin/flake8",
+    "python.linting.pycodestylePath": "/usr/local/bin/pycodestyle",
+    "python.linting.pydocstylePath": "/usr/local/bin/pydocstyle",
+    "python.linting.pylintPath": "/usr/local/bin/pylint",
+    "python.testing.pytestPath": "/usr/local/bin/pytest",
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true,
+    "files.insertFinalNewline": true
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "eamodio.gitlens"
+  ],
+}
